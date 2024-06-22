@@ -7,6 +7,7 @@ export const GifExpertApp = () => {
 
   const onAddCategory = (newCategory) =>   {
 
+    if(categories.includes(newCategory)) return
   
     // console.log(newCategory)
     // categories.push(newCategory)
@@ -32,6 +33,7 @@ export const GifExpertApp = () => {
     <AddCategory
     // setCategories ={setCategories} 
     onNewCategory={ value => onAddCategory(value)}
+    // currentCategories={categories}
     />
 
   {/* List de Gif */}
