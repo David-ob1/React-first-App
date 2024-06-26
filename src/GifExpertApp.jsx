@@ -1,6 +1,5 @@
 import { useState } from "react" 
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import { AddCategory,GifGrid } from "./components/index";
 
 export const GifExpertApp = () => {
 
@@ -10,16 +9,7 @@ export const GifExpertApp = () => {
 
     if(categories.includes(newCategory)) return
   
-    // console.log(newCategory)
-    // categories.push(newCategory)
     setCategories([newCategory,...categories])
-
-    // setCategories([...categories, "Valorant"])
-    // setCategories(cat => [...cat,"Valorant"])
-
-
-    
-    
 
   }
 
